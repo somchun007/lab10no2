@@ -12,12 +12,12 @@ $objQuery = mysqli_query($conn,$sql);
 <table border="1">
     <?php while ($row = mysqli_fetch_array($objQuery)) : ?>
         <tr > 
-            <td><?php echo $row["username"]?></td>
-            <td><?php echo $row["password"]?></td>
-            <td><?php echo $row["name"]?></td>
-            <td><?php echo $row["address"]?></td>
-            <td><?php echo $row["mobile"]?></td>
-            <td><?php echo $row["email"]?></td>
+            <td><?= $row["username"]?></td>
+            <td><?= $row["password"]?></td>
+            <td><?= $row["name"]?></td>
+            <td><?= $row["address"]?></td>
+            <td><?= $row["mobile"]?></td>
+            <td><?= $row["email"]?></td>
         </tr>
     <?php endwhile; ?>
 </table>
